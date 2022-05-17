@@ -18,7 +18,7 @@ public class Servicios {
             private static  Retrofit retrofit = retrofitBuilder.build();
             private static PelisApi pelisApi = retrofit.create(PelisApi.class);
 
-            public PelisApi getPelisApi(){
+            public static PelisApi getPelisApi(){
                 return  pelisApi;
             }
 }
